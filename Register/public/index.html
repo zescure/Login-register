@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Welcome</title></head>
+<body>
+  <h1>Welcome! 🎉</h1>
+  <p>Ini halaman dummy setelah login.</p>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    function logout() {
+      fetch('/logout').then(() => {
+        location.href = '/login.html';
+      });
+    }
+  </script>
+</body>
+</html>
